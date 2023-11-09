@@ -1,0 +1,139 @@
+/* Estilos para la tarjeta de producto */
+.item-carrito {
+   
+    display: inline-block;
+    width: 80%; /* Ancho de la tarjeta */
+    
+}
+
+.carrito-content {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Primera columna para la imagen, segunda columna para el contenido */
+    grid-column-gap: 10px; /* Espacio entre las columnas */
+    align-items: center; /* Centra verticalmente */
+}
+
+.carrito-img img {
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    display: block;
+}
+
+/* Aplica estilos adicionales según sea necesario */
+
+
+/* Estilos para reducir el espacio entre la tarjeta y las otras columnas */
+table {
+    border-collapse: collapse; /* Elimina el espaciado entre las celdas */
+    width: 100%;
+    
+}
+
+tr {
+    border-bottom: 1px solid #ccc; /* Agrega un borde inferior a las filas */
+}
+
+td {
+    padding: 10px; /* Ajusta el espacio interior de las celdas */
+    text-align: left;
+    vertical-align: center;
+    padding: 1%;
+}
+
+.tarjeta-celda {
+    padding-right: 0; /* Elimina el margen derecho de la celda de la tarjeta */
+}
+
+.carrito{
+    font-size: 100%;
+    
+}
+.carrito-title {
+    margin-top: 10px;
+     color: #05386b;
+     font-family: 'Inter', sans-serif;
+     font-weight: 700;
+    border-radius: 2px;
+    display: inline-block; /* Hace que el elemento sea de tipo "inline-block" */
+}
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 40px; /* Ancho del campo de entrada */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.increment-button, .decrement-button {
+    width: 30px;
+     /* Ancho de los botones */
+    background-color: #ddd; /* Color de fondo de los botones */
+    border: none;
+    padding: 0; /* Ajusta el espaciado vertical según tus preferencias */
+    cursor: pointer;
+    background-color: #ff3333;
+}
+
+
+.carrito-form{
+    display: flex;
+    gap: 2px;
+    vertical-align: center;
+}
+
+.delete-button {
+    width: 30px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    border-radius: 50%; /* Borde circular */
+    background-color: #ff3333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el resumen */
+
+.resume-container{
+    text-align: end;
+}
+.resumen {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 50%;
+    text-align: end;
+}
+
+.resumen-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.resumen-detalle p {
+    margin: 5px 0;
+}
+
+.ir-a-pagar-button {
+    background-color: #ff3333; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos adicionales según sea necesario */
+
+
+

@@ -11,7 +11,7 @@
     <meta name="description" content="">
 
 
-    <title>Login</title>
+    <title>CARRITO</title>
 
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/mobirise/css/carritoStyle.css">
 
 
 
@@ -65,14 +66,13 @@
                     <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                         <li class="nav-item"><a class="nav-link link text-primary display-7"
                                 href="./index.html">Inicio&nbsp;</a></li>
-                                <li class="nav-item"><a class="nav-link link text-primary display-7"
-                                    href="./productos.html">Nuestros productos&nbsp;</a></li>
+                        <li class="nav-item"><a class="nav-link link text-primary display-7"
+                                href="./productos.html">Nuestros productos&nbsp;</a></li>
                         <li class="nav-item dropdown"><a class="nav-link link text-primary dropdown-toggle display-7"
                                 href="index.html#content4-6" data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
                                 data-bs-auto-close="outside" aria-expanded="false">Categorias</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown-818"><a
-                                    class="text-primary dropdown-item display-7"
-                                    href="./productos.html">Alimentos</a><a
+                                    class="text-primary dropdown-item display-7" href="./productos.html">Alimentos</a><a
                                     class="text-primary show dropdown-item display-7"
                                     href="./productos.html">Bebidas<br></a><a
                                     class="text-primary show dropdown-item display-7"
@@ -95,39 +95,122 @@
         </nav>
     </section>
 
-  
+    <section class="login container carrito">
+        <h2 class="carrito-title">CARRITO DE COMPRAS</h2>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>DETALLE DEL PODUCTO</th>
+                    <th>CANTIDAD</th>
+                    <th>TOTAL</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas de la tabla con los productos -->
+                <tr>
+                    <td>
+                        <div class="item-carrito card">
+                            <div class="carrito-content">
+                                <div class="carrito-img">
+                                    <img src="assets/images/dulce de cayote.jpg" alt="Te de coca">
+                                </div>
+                                <div class="item-content-carrito">
+                                    <h5 class="item-title"><strong>Dulce de cayote</strong></h5>
+                                    <h6 class="item-subtitle"><strong>Alimento</strong></h6>
+                                    <p class="item-price">precio: $999</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <section class="login container">
-        <h2 class="login__title">INGRESAR A MI CUENTA</h2>
-        <div class="login-box">
-            <button class="login__social-button google-login-button">Iniciar con Google</button>
-            <button class="login__social-button facebook-login-button">Iniciar con Facebook</button>
-        </div>
+                        </div>
 
-        <form class="login__form" action="" method="">
-            <!--email-->
-            <div class="login__form-box">
-                <label class="login__form__label" for="email">Email:</label>
-                <input class="login__form__textbox" type="email" id="email" placeholder="elias3847040@gmail.com" />
-            </div>
+                    </td>
+                    <td>
+                        <div class="input-container">
+                            <form class="carrito-form" action="">
+                                <div class="input-container">
+                                    <input type="text" placeholder="1">
+                                </div>
+                                <div class="button-container">
+                                    
+                                    <button class="decrement-button">-</button>
+                                </div>
+                                <div class="button-container">
+                                    <button class="increment-button">+</button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                    <td>$999</td>
+                    <td>
+                        <button class="delete-button">X</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <div class="item-carrito card">
+                            <div class="carrito-content">
+                                <div class="carrito-img">
+                                    <img src="assets/images/teCoca.jpg" alt="Te de coca">
+                                </div>
+                                <div class="item-content-carrito">
+                                    <h5 class="item-title"><strong>Te de coca</strong></h5>
+                                    <h6 class="item-subtitle"><strong>Bebida</strong></h6>
+                                    <p class="item-price">precio: $199</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </td>
+                    <td>
+                        <div class="input-container">
+                            <form class="carrito-form" action="">
+                                <div class="input-container">
+                                    <input type="text" placeholder="2">
+                                </div>
+                                <div class="button-container">
+                                    
+                                    <button class="decrement-button">-</button>
+                                </div>
+                                <div class="button-container">
+                                    <button class="increment-button">+</button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+                    </td>
+                    <td>$398</td>
+                    <td>
+                        <button class="delete-button">X</button>
+                    </td>
+                    
+                </tr>
+                <!-- Agrega más filas según tus productos -->
+            </tbody>
+        </table>
 
-            <!--contraseña-->
-            <div class="login__form-box">
-                <label class="login__form__label" for="contraseña">Contraseña:</label>
-                <input class="login__form__textbox" type="password" id="contraseña" placeholder="●●●●●●●●●●●" />
-            </div>
-
-            <!--enviar-->
-            <div class="login__form-enviar">
-                <button class="login__form__btn" type="submit">Ingresar</button>
-                <div class="login__form-recuerdame">
-                    <input type="checkbox">
-                    <label for="">Recordarme</label>
+        <div class="resume-container">
+            <div class="resumen">
+                <h3 class="resumen-title">Resumen</h3>
+                <div class="resumen-detalle">
+                    <p>Cantidad de elementos: <span id="cantidad-elementos">3</span></p>
+                    <p>Subtotal: <span id="subtotal">$1397</span></p>
+                    <p>Envío: <span id="envio">$10</span></p>
+                    <p>Total: <span id="total">$1407</span></p>
                 </div>
+                <button class="ir-a-pagar-button">Ir a Pagar</button>
             </div>
-            <a class="login__form-olvidar" href="/">Olvidé mi contraseña</a>
-        </form>
+        </div>
+       
     </section>
+
+
 
     <section data-bs-version="5.1" class="footer3 cid-sFAOjz8nX7" once="footers" id="footer3-d">
 
@@ -197,24 +280,7 @@
     <script src="assets/theme/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        new Glide('.glide',
-            {
-                type: 'carousel',
-                startAt: 0,
-                perView: 3,
-                gap: 30,
-                breakpoints: {
-                    991: {
-                        perView: 2
-                    },
-                    768: {
-                        perView: 1
-                    }
-                }
-            }
-        ).mount();
-    </script>
+
 
 </body>
 
