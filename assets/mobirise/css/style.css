@@ -1,0 +1,49 @@
+.col-2 {
+  padding: 0;
+  float: left;
+}
+
+.container-buscador {
+  background-color: #f4f4f4;
+  
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+.title-buscador {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+.price-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Alinea los elementos de filtrado en columnas */
+form > div {
+  display: inline-block;
+  width: 48%; /* Ancho de cada columna, ajusta según tus necesidades */
+  margin-bottom: 10px;
+}
+
+/* Agrega espacio entre las etiquetas de los checkbox y sus respectivos input */
+label {
+  margin-right: 5px;
+}
+
+/* Estilo adicional según tus preferencias */
+
