@@ -6,13 +6,20 @@
     
 }
 
-.carrito-content {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Primera columna para la imagen, segunda columna para el contenido */
-    grid-column-gap: 10px; /* Espacio entre las columnas */
-    align-items: center; /* Centra verticalmente */
+.carrito-content{
+    display: flex;
+    flex-direction: column;
 }
+@media(min-width:768px) {
 
+    .carrito-content {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Primera columna para la imagen, segunda columna para el contenido */
+        grid-column-gap: 10px; /* Espacio entre las columnas */
+        align-items: center; /* Centra verticalmente */
+    }
+    
+}
 .carrito-img img {
     max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
     height: auto;
