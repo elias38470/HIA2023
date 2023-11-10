@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  
+    height: 100vh;
+}
+
+.payment-form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.payment-method {
+    flex: 1;
+    text-align: center;
+}
+
+.method-button {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #555;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.method-button i {
+    margin-right: 5px;
+}
+
+.method-button p {
+    margin: 0;
+}
+
+.method-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.method-button.disabled {
+    cursor: not-allowed;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.payment-tab {
+    display: none;
+}
+
+.payment-tab.active {
+    display: block;
+}
+
+.payment-form {
+    padding: 20px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-row .form-group {
+    display: inline-block;
+    margin-right: 10px;
+    width: calc(50% - 5px);
+}
+
+.form-group.cvc {
+    width: 45%;
+}
+
+.accepted-cards {
+    display: flex;
+    align-items: center;
+}
+
+.accepted-cards p {
+    flex: 1;
+    font-weight: 600;
+}
+
+.accepted-cards img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.qr-scan {
+    text-align: center;
+}
+
+.qr-scan h1 {
+    font-size: 20px;
+}
+
+.qr-code {
+    max-width: 100%;
+}
+
+.smallCardIcon {
+    max-width: 50px; /* Ajusta el tamaño máximo según tus preferencias */
+    margin-right: 40px;
+}
