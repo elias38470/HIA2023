@@ -4,10 +4,15 @@
 }
 
 .container-buscador {
-  background-color: #f4f4f4;
-  
-  border: 1px solid #ddd;
+  background-color: #edf5e1;
+  color: #05386b;
+  border: 2px solid #7f8d6b;
   border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 10px;
 }
 
 form {
@@ -17,6 +22,7 @@ form {
 .title-buscador {
   font-size: 18px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 input[type="text"],
@@ -34,9 +40,10 @@ input[type="checkbox"] {
 }
 
 /* Alinea los elementos de filtrado en columnas */
-form > div {
+form>div {
   display: inline-block;
-  width: 48%; /* Ancho de cada columna, ajusta según tus necesidades */
+  width: 48%;
+  /* Ancho de cada columna, ajusta según tus necesidades */
   margin-bottom: 10px;
 }
 
@@ -46,4 +53,13 @@ label {
 }
 
 /* Estilo adicional según tus preferencias */
+
+.row>[class*=col-2] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tab-content{
+  font-size: 1.2rem;
+}
 
